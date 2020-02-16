@@ -17,8 +17,12 @@ self.addEventListener("install", function (event) {
       if (offlineFallbackPage === "offline.html") {
         return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
       }
-      cache.add(offlineIcon);
-      return cache.add(offlineFallbackPage);
+      
+      return cache.addAll([
+        offlineFallbackPage,
+        offlineIcon
+      ])
+      // return cache.add(offlineFallbackPage);
     })
   );
 });

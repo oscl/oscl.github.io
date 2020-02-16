@@ -13,11 +13,7 @@
             width: 100%;
         }
 
-        .offline-card {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .dev-card {
             padding: 30px;
             /* font-size: 1.2em; */
         }
@@ -37,7 +33,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper purple">
-                <a href="#" class="brand-logo">
+                <a href="./index.html" class="brand-logo">
                     <!-- <img src="./icon.png"> -->
                     &nbsp;&nbsp;PWA
                 </a>
@@ -57,27 +53,29 @@
         <li><a href="./about.html">About</a></li>
         <li class="active"><a href="./contact.html">Contact</a></li>
     </ul>
+    <br><br>
 
-    <div class="card offline-card center">
-        <div class="card-content">
-            <img src="../jishnu raj.png" class="dev-img responsive-img circle z-depth-3"><br>
-            <div class="card-title">JISHNU RAJ</div><br>
-            <p>
-                I am just a degree first year student with a lot of dreams, ambitions and some foolishness also.
-                I may not be perfect but you may be able to make a little more better. Your contributions to my code would always make someone elses life better.
-                Well, you can always contact me through any of the following ways: <br><br>
-                <a target="_blank" href="mailto:jishnurajpp2@gmail.com" class="btn btn-large waves-effect waves-light red">Mail Me</a>
-                <a target="_blank" href="https://wa.me/+919019132589" class="btn btn-large waves-effect waves-light green">WhatsApp</a>
-                <a target="_blank" href="https://www.instagram.com/___dare_partner___/" class="btn btn-large waves-effect waves-light purple">Instagram</a>
-                 
-                <br>
-            </p>
+    <div class="container">
+        <div class="card dev-card center">
+            <div class="card-content">
+                <img src="../jishnu raj.png" class="dev-img responsive-img circle z-depth-3"><br>
+                <div class="card-title">JISHNU RAJ</div><br>
+                <p>
+                    I am just a degree first year student with a lot of dreams, ambitions and some foolishness also.
+                    I may not be perfect but you may be able to make a little more better. Your contributions to my code would always make someone elses life better.
+                    Well, you can always contact me through any of the following ways: <br><br>
+                    <a target="_blank" href="mailto:jishnurajpp2@gmail.com" class="btn btn-large waves-effect waves-light red">Mail Me</a>
+                    <a target="_blank" href="https://wa.me/+919019132589" class="btn btn-large waves-effect waves-light green">WhatsApp</a>
+                    <a target="_blank" href="https://www.instagram.com/___dare_partner___/" class="btn btn-large waves-effect waves-light purple">Instagram</a>
+                    <br>
+                </p>
+            </div>
         </div>
     </div>
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="./jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();

@@ -11,6 +11,18 @@
             height: 100%;
             width: 100%;
         }
+        .offline-card{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+            /* font-size: 1.2em; */
+        }
+        .offline-icon{
+            height: 160px;
+            width: 160px;
+        }
     </style>
     <title>PWA Demo</title>
 </head>
@@ -29,24 +41,15 @@
         </div>
       </nav>
 
-      <div class="container" style="margin-top: 10px;">
-          <div class="row">
-              <div class="col s12 m12 lg12">
-                  <div class="card">
-                      <div class="card-content">
-                          <div class="card-title">Hello World!</div>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit ex et hendrerit tristique. Praesent sagittis nunc sit amet porta fermentum. Nulla eget ultricies lectus. Pellentesque egestas enim tellus, a porta ante malesuada id. In aliquam venenatis magna, vitae feugiat nisl maximus sed. Nam aliquet, neque id sodales vehicula, felis massa suscipit lacus, at pharetra justo nisi non nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam quis urna quis diam volutpat dapibus.
-
-Aliquam fringilla dolor sed risus tincidunt tristique. Aenean sed metus sit amet dolor hendrerit iaculis ut a est. Donec congue, urna nec fermentum commodo, neque tellus condimentum metus, quis gravida est erat vitae mauris. Morbi sit amet felis in felis sagittis lacinia. Quisque non tincidunt lacus, cursus pellentesque quam. Curabitur tempus ut elit in efficitur. Suspendisse malesuada maximus laoreet. Nulla facilisi. Quisque iaculis convallis ex. Donec auctor libero arcu, nec viverra ipsum iaculis non. Suspendisse a vehicula ex, eget semper ligula. Sed iaculis dignissim tincidunt. Quisque ac ultrices sapien. Duis consectetur pulvinar nisi at suscipit. Ut euismod tellus id enim bibendum pharetra. Morbi ut turpis fringilla, scelerisque lorem eget, condimentum nulla.
-
-Quisque est ex, convallis eu laoreet ut, pellentesque ac leo. Nunc ac ligula finibus, iaculis ex ornare, elementum nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut aliquet velit. Donec non quam id tellus imperdiet tristique. Morbi sagittis magna et sem tristique, in scelerisque lacus cursus. Fusce eu eros posuere, gravida dolor fringilla, aliquam tellus.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+      <div class="card offline-card center">
+        <div class="card-content">
+            <img src="./offline-icon.png" class="offline-icon">
+            <div class="card-title">you don't have an internet connection</div>
+            <p>
+              Please check your network connection and try again.
+            </p>
+        </div>
+    </div>
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>

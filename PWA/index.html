@@ -135,8 +135,8 @@
             window.addEventListener('beforeinstallprompt', (e) => {
                 e.preventDefault();
                 deferredPrompt = e;
-                pwaInstallBtn.show(500);
-                setTimeout(()=>$('.tap-target').tapTarget('open'), 1000)
+                pwaInstallBtn.show(1000);
+                setTimeout(()=>$('.tap-target').tapTarget('open'), 1500)
 
                 pwaInstallBtn.on("click", (e) => {
                     pwaInstallBtn.hide(100);

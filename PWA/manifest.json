@@ -3,7 +3,7 @@
 	"lang" : "en",
 	"name" : "PWA Demo",
 	"scope" : "/PWA/",
-	"display" : "browser",
+	"display" : "standalone",
 	"start_url" : "https://oscl.github.io/PWA/",
 	"short_name" : "PWA Demo",
 	"theme_color" : "purple",

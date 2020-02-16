@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+        .brand-logo>img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <title>PWA Demo</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper purple">
+                <a href="#" class="brand-logo">
+                    <!-- <img src="./icon.png"> -->
+                    &nbsp;&nbsp;PWA
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="active"><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li class="active"><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+      <div class="container" style="margin-top: 10px;">
+          <div class="row">
+              <div class="col s12 m12 lg12">
+                  <div class="card">
+                      <div class="card-content">
+                          <div class="card-title">Progressive Web App</div>
+                          <p>
+                            A Progressive Web Apps is a web app that uses modern technologies to make an app like experience.
+                            They are, reliable and more engaging. Just like the advantages, PWAs have some additional requirements to be accepted by web browsers. <br>
+                            These requirements are:
+                            <br><br>
+                            <h6>Secure:</h6>
+                            <p>
+                                A secure connection (HTTPS) over your site makes sure all traffic is as safe as a native app.
+                                Service Workers cannot be registered on for a webapp if it is not hosted on HTTPS.
+                            </p><br>
+                            <h6>Service Worker:</h6>
+                            <p>
+                                The webapp should have a valid servieworker.js file. It can cache data and receive background notifications, which are the
+                                main specialities of PWA.
+                            </p><br>
+                            <h6>Manifest.json:</h6>
+                            <p>
+                                The webapp should have a valid manifest.json file with details about the behaviour of that app.
+                                This includes everything from images, to language, to the start page of your web app.   
+                            </p><br>
+                            <h6>Network Independant:</h6>
+                            <p>
+                                Progressive Web App should work properly without depending on network connection.
+                                Service worker will help PWA to control tracfic even if client is offline or the network isn't reliable.    
+                            </p><br>
+                            <h6>Reponsiveness:</h6>
+                            <p>
+                                The site should be responsive on all screen sizes like Mobile, Tablet and Desktop.
+                            </p><br>
+                            <h6>Cross-Browser:</h6>
+                            <p>
+                                The PWA should work properly on multiple web browser (Like Chrome, Firefox, Edge and Safari) without causing any kind of errors.
+                            </p><br>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

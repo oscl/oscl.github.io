@@ -1,17 +1,19 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <style>
-        .brand-logo>img{
+        .brand-logo>img {
             height: 100%;
             width: 100%;
         }
-        .offline-card{
+
+        .offline-card {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -19,13 +21,18 @@
             padding: 30px;
             /* font-size: 1.2em; */
         }
-        .offline-icon{
+
+        .dev-img {
             height: 160px;
             width: 160px;
+        }
+        .btn{
+            margin: 10px;
         }
     </style>
     <title>PWA Demo</title>
 </head>
+
 <body>
     <div class="navbar-fixed">
         <nav>
@@ -38,7 +45,7 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="active"><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,15 +55,22 @@
     <ul class="sidenav" id="mobile-demo">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li class="active"><a href="./contact.html">Contact</a></li>
     </ul>
 
     <div class="card offline-card center">
         <div class="card-content">
-            <img src="./offline-icon.png" class="offline-icon">
-            <div class="card-title">you don't have an internet connection</div>
+            <img src="../jishnu raj.png" class="dev-img responsive-img circle z-depth-3"><br>
+            <div class="card-title">JISHNU RAJ</div><br>
             <p>
-              Please check your network connection and try again.
+                I am just a degree first year student with a lot of dreams, ambitions and some foolishness also.
+                I may not be perfect but you may be able to make a little more better. Your contributions to my code would always make someone elses life better.
+                Well, you can always contact me through any of the following ways: <br><br>
+                <a target="_blank" href="mailto:jishnurajpp2@gmail.com" class="btn btn-large waves-effect waves-light red">Mail Me</a>
+                <a target="_blank" href="https://wa.me/+919019132589" class="btn btn-large waves-effect waves-light green">WhatsApp</a>
+                <a target="_blank" href="https://www.instagram.com/___dare_partner___/" class="btn btn-large waves-effect waves-light purple">Instagram</a>
+                 
+                <br>
             </p>
         </div>
     </div>
@@ -64,4 +78,5 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
+
 </html>

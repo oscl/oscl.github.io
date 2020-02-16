@@ -4,7 +4,6 @@ const CACHE = "pwabuilder-offline-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 const offlineFallbackPage = "offline.html";
-const offlineIcon = "offline-icon.png";
 
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
@@ -18,11 +17,7 @@ self.addEventListener("install", function (event) {
         return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
       }
       
-      return cache.addAll([
-        offlineFallbackPage,
-        offlineIcon
-      ])
-      // return cache.add(offlineFallbackPage);
+      return cache.add(offlineFallbackPage);
     })
   );
 });
